@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Added a link from google font -->
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua|Yellowtail" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,9 +19,16 @@
 
 <body>
     <div class="container">
-        <div>
-            <h1>Crystals Collector!</h1>
-        </div>
+        
+
+        <div id="starshine">
+                <div class="template shine"></div>
+            
+
+            <div>
+                <h1>Crystals Collector!</h1>
+            </div>
+        
 
         <div id="directions">
             <p>You will be given a random number at the start of the game.</p>
@@ -36,10 +45,13 @@
             <p>Each time when the game starts, the game will change the value of each crystal.</p>
         </div>
         <div id="gem">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/7125NT4a7PL._SX425_.jpg" onclick="button1()" />
-            <img src="https://images-na.ssl-images-amazon.com/images/I/7125NT4a7PL._SX425_.jpg" onclick="button2()" />
-            <img src="https://images-na.ssl-images-amazon.com/images/I/7125NT4a7PL._SX425_.jpg" onclick="button3()" />
-            <img src="https://images-na.ssl-images-amazon.com/images/I/7125NT4a7PL._SX425_.jpg" onclick="button4()" />
+            <img src="../unit-4-game/assets/images/crystal.png" onclick="button1()" />
+            
+            <img src="../unit-4-game/assets/images/diamond.png" onclick="button2()" />
+            
+            <img src="../unit-4-game/assets/images/ruby.png" onclick="button3()" />
+            
+            <img src="../unit-4-game/assets/images/emerald.png" onclick="button4()" />
 
         </div>
 
@@ -59,6 +71,8 @@
         </div>
 
     </div>
+</div>
+
     <script src="assets/javascript/game.js"></script>
 </body>
 

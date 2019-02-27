@@ -37,11 +37,10 @@ function resetValues() {
 }
 
 function updateResults() {
-    // document.getElementById("wins").textContent = "Wins: " + wins;
-    $("#wins").text =  "Wins: " + wins;
-    document.getElementById("losses").textContent = "Losses: " + losses;
-    document.getElementById("target").textContent = "Target: " + target;
-    document.getElementById("total_score").textContent = "Your total score is: " + score;
+    $("#wins").text("Wins: " + wins);
+    $("#losses").text("Losses: " + losses);
+    $("#target").text("Target: " + target);
+    $("#total_score").text("Your total score is: " + score);
 }
 
 function verify(value) {
@@ -68,3 +67,34 @@ function verify(value) {
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
+
+//Glitter effect js//
+$(function() {
+    var body = $('#starshine'),
+        template = $('.template.shine'),
+        stars =  500,
+        sparkle = 20;
+    
+      
+    var size = 'small';
+    var createStar = function() {
+      template.clone().removeAttr('id').css({
+        top: (Math.random() * 100) + '%',
+        left: (Math.random() * 100) + '%',
+        webkitAnimationDelay: (Math.random() * sparkle) + 's',
+        mozAnimationDelay: (Math.random() * sparkle) + 's'
+      }).addClass(size).appendTo(body);
+    };
+   
+    for(var i = 0; i < stars; i++) {
+      if(i % 2 === 0) {
+        size = 'small';
+      } else if(i % 3 === 0) {
+        size = 'medium';
+      } else {
+        size = 'large';
+      }
+      
+      createStar();
+    }
+  });
