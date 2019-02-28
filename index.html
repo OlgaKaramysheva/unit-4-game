@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
     <!--  -->
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Added a link from google font -->
@@ -19,59 +19,61 @@
 
 <body>
     <div class="container">
-        
+
 
         <div id="starshine">
-                <div class="template shine"></div>
-            
+            <div class="template shine"></div>
 
-            <div>
-                <h1>Crystals Collector!</h1>
+            <div class="row">
+                <div class="w-100">
+                    <h1 class="mx-auto">Crystals Collector!</h1>
+                </div>
             </div>
-        
 
-        <div id="directions">
-            <p>You will be given a random number at the start of the game.</p>
+            <div class="row">
+                <div class="w-100">
+                    <div id="directions">
+                        <p class="mx-auto">You will be given a random number at the start of the game.</p>
 
-            <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
-                total score. </p>
+                        <p class="mx-auto">There are four crystals below. By clicking on a crystal, you will add aspecific amount of points to your total score. </p>
 
-            <p>You win the game by matching your total score to random number, you lose the game if your total score
-                goes
-                above the random number.</p>
+                        <p class="mx-auto">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
 
-            <p>The value of each crystal is hidden from you unti you click on it.</p>
+                        <p class="mx-auto">The value of each crystal is hidden from you unti you click on it.</p>
 
-            <p>Each time when the game starts, the game will change the value of each crystal.</p>
+                        <p class="mx-auto">Each time when the game starts, the game will change the value of each crystal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gem">
+                <img src="../unit-4-game/assets/images/crystal.png" onclick="button1()" />
+
+                <img src="../unit-4-game/assets/images/diamond.png" onclick="button2()" />
+
+                <img src="../unit-4-game/assets/images/ruby.png" onclick="button3()" />
+
+                <img src="../unit-4-game/assets/images/emerald.png" onclick="button4()" />
+
+            </div>
+
+            <div class="scorecontainer">
+                <div class="boxes" id="target-number">
+                    <p id="target">Target: </p>
+                </div>
+                <div class="boxes" id="scorebox">
+                    <p id="wins">Wins: 0</p>
+                    <p id="losses">Losses: 0</p>
+                </div>
+
+
+                <div class="boxes">
+                    <p id="total_score">Your total score is: </p>
+                </div>
+            </div>
+
         </div>
-        <div id="gem">
-            <img src="../unit-4-game/assets/images/crystal.png" onclick="button1()" />
-            
-            <img src="../unit-4-game/assets/images/diamond.png" onclick="button2()" />
-            
-            <img src="../unit-4-game/assets/images/ruby.png" onclick="button3()" />
-            
-            <img src="../unit-4-game/assets/images/emerald.png" onclick="button4()" />
-
-        </div>
-
-        <div class="scorecontainer">
-            <div class="boxes" id="target-number">
-                <p id="target">Target: </p>
-            </div>
-            <div class="boxes" id="scorebox">
-                <p id="wins">Wins: 0</p>
-                <p id="losses">Losses: 0</p>
-            </div>
-
-
-            <div class="boxes">
-                <p id="total_score">Your total score is: </p>
-            </div>
-        </div>
-
     </div>
-</div>
 
     <script src="assets/javascript/game.js"></script>
 </body>
